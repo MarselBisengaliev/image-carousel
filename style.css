@@ -11,6 +11,8 @@ body {
     height: 100vh;
     flex-direction: column;
     background-color: burlywood;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -37,6 +39,12 @@ img {
     width: 700px;
     height: 600px;
     object-fit: cover;
+}
+
+@media (max-width: 800px) {
+    img {
+        width: 300px;
+    }
 }
 
 .arrows {
@@ -78,6 +86,13 @@ img {
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 50%;
     cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+    .dot {
+        width: 25px;
+        height: 25px;
+    }
 }
 
 .dot:hover {
