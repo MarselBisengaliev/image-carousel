@@ -1,0 +1,89 @@
+*,*::after,*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: burlywood;
+}
+
+
+.container {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.wrapper div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 700px;
+    height: 600px;
+    object-fit: cover;
+}
+
+.arrows {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+}
+
+.arrows button {
+    padding: 15px;
+    font-size: 30px;    
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+    opacity: 0;
+    transition: all .1s linear;
+    height: 100%;
+}
+
+.arrows button:hover {
+    opacity: 1;
+    background-color: rgba(0,0,0, 0.4);
+}
+
+.dots {
+    display: flex;
+    grid-column-gap: 15px;
+    margin-top: 15px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot:hover {
+    background: #000;
+}
+
+.dot.active {
+    background: #000;
+}
